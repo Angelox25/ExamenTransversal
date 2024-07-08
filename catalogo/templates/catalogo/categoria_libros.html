@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categoria de libros</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'assets/css/index.css' %}">
+
+</head>
+<body>
+    <h2><strong>Lista de libros disponibles</strong></h2>
+
+    <div class="container">
+        <div class="row">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">id Libro</th>
+                        <th scope="col">Titulo</th>
+                        <th scope="col">Año</th>
+                        <th scope="col">Descripción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for Libro in Libros %}
+                    <tr>
+                        <th scope="row">{{ Libro.id_libro }}</th>
+                        <td>{{ Libro.titulo }}</td>
+                        <td>{{ Libro.anio }}</td>
+                        <td>{{ Libro.descripcion_libro }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    
+
+</body>
+</html>

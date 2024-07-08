@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categoria de Autores</title>
+</head>
+<body>
+    <h1>Listado de Autores</h1>
+
+    <div class="container">
+        <div class="row">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">id autor</th>
+                        <th scope="col">Nombre autor</th>
+                        <th scope="col">nacionalidad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for Autor in Autores %}
+                    <tr>
+                        <td>{{ Autor.id_autor }}</td>
+                        <td>{{ Autor.nombre_autor }}</td>
+                        <td>{{ Autor.nacionalidad }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+</body>
+</html>

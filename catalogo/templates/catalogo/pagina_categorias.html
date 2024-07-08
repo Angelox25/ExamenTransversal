@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagina de categorias</title>
+</head>
+<body>
+    <h2><strong>Lista de Categorias disponibles</strong></h2>
+
+    <div class="container">
+        <div class="row">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">id categoria</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Descripción</th>                        
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for Categoria in Categorias %}
+                    <tr>
+                        <td>{{ Categoria.id_categoria }}</td>
+                        <td>{{ Categoria.nombre_categoria }}</td>
+                        <td>{{ Categoria.descripcion_categoria }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+</body>
+</html>
