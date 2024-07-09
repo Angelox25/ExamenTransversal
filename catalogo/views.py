@@ -1,31 +1,49 @@
 from django.shortcuts import render
+from django.http import JsonResponse
 from .models import *
 # Create your views here.
 
 def index(request):
-	Libros = Libro.objects.all() 
+	Navbars = Navbar.objects.all()
 	context = {
-       "Libros": Libros
+     	"Navbars": Navbars,
     }
 	return render (request, 'catalogo/index.html', context)
 
 def categoria_libros(request):
+	Navbars = Navbar.objects.all()
 	Libros = Libro.objects.all() 
 	context = {
-       "Libros": Libros
+    	"Navbars": Navbars,
+       	"Libros": Libros
     }
 	return render (request, 'catalogo/categoria_libros.html', context)
 
 def categoria_autores(request):
+	Navbars = Navbar.objects.all()
 	Autores = Autor.objects.all() 
 	context = {
-       "Autores": Autores
+		"Navbars": Navbars,
+      	"Autores": Autores
     }
 	return render (request, 'catalogo/categoria_autores.html', context)
 
 def pagina_categorias(request):
+	Navbars = Navbar.objects.all()
 	Categorias = Categoria.objects.all() 
 	context = {
-       "Categorias": Categorias
+		"Navbars": Navbars,
+       	"Categorias": Categorias
     }
 	return render (request, 'catalogo/pagina_categorias.html', context)
+
+def display_images(request):
+    return render(request, 'myapp/display_images.html')
+
+def display_video(request):
+    return render(request, 'myapp/display_video.html')
+
+def get_urls(request):
+    Navbars = Navbar.objects.all()
+    data = {Navbar.nombre: Navbar.url for Navbar in Navbars}
+    return JsonResponse(data)

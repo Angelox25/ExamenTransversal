@@ -1,11 +1,49 @@
+.trans{
+background: rgba(255, 255, 255, 0.63);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(1.7px);
+-webkit-backdrop-filter: blur(1.7px);
+border: 0px solid rgba(255, 255, 255, 0.86);
+border-radius: 50px;
+}
+
+
+
 h1{
     text-align: center;
 
 }
-
 p{
     text-align: justify;
-    background-color: dodgerblue;
-    color: white;
-
 }
+
+td,th{
+    color:black;
+    text-align: justify;
+}
+tr{
+    color:black;
+    text-align: center;
+}
+
+
+.nav-item{
+    font-size: 20px;    
+}
+
+.contenedor {
+    text-align: center;
+}
+.contenedor img {
+    display: block;
+    margin: auto;
+}
+
+body {
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+        background-repeat: no-repeat; /* Evita que la imagen se repita */
+        background-attachment: fixed; /* Fija la imagen al fondo */
+}
+
+
