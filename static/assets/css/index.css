@@ -5,10 +5,18 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(1.7px);
 -webkit-backdrop-filter: blur(1.7px);
 border: 0px solid rgba(255, 255, 255, 0.86);
-border-radius: 50px;
+
 }
+table{
+background: rgba(255, 255, 255, 0.51);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(4.9px);
+-webkit-backdrop-filter: blur(4.9px);
+border: 1px solid rgba(255, 255, 255, 1);
+    
 
-
+}
 
 h1{
     text-align: center;
@@ -19,8 +27,9 @@ p{
 }
 
 td,th{
-    color:black;
-    text-align: justify;
+    color:brown;
+    text-align: center;
+    font-size: 25px;
 }
 tr{
     color:black;
@@ -41,9 +50,23 @@ tr{
 }
 
 body {
-    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+        background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
         background-repeat: no-repeat; /* Evita que la imagen se repita */
         background-attachment: fixed; /* Fija la imagen al fondo */
+        background-color: aqua;
 }
 
+.h1edit{
 
+    color: white;
+}
+
+.jumbotron {
+background: rgba(255, 255, 255, 0.3);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(1.9px);
+-webkit-backdrop-filter: blur(1.9px);
+border: 1px solid rgba(255, 255, 255, 0.59);
+color: white;
+}
