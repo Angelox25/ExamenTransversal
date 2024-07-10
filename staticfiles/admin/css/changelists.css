@@ -19,10 +19,12 @@
 
 .change-list .filtered table {
     border-right: none;
+    
 }
 
 .change-list .filtered {
     min-height: 400px;
+    color: white;
 }
 
 .change-list .filtered .results, .change-list .filtered .paginator,

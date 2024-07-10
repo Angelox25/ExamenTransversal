@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     {% load static %}
-    <link rel="stylesheet" href="{% static '/assets/css/index.css' %}">
+    <link rel="stylesheet" href="{% static '/assets/css/styles.css' %}">
     
 </head>
 <body style="background-image: url('{% static '/assets/images/op3.jpg' %}');">
@@ -38,23 +38,17 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="{% static 'assets/images/4.jpg' %}" class="d-block w-100" alt="..." >
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Biblioteca Bookipedia</h5>
-              <p>asdasd</p>
+            <div class="carousel-caption d-none d-md-block">              
             </div>
           </div>
           <div class="carousel-item">
             <img src="{% static 'assets/images/2.png' %}" class="d-block w-100" alt="..." >
             <div class="carousel-caption d-none d-md-block">
-              <h5>Categorias</h5>
-              <p>Explora un espacio acogedor y multifuncional dedicado al conocimiento, la cultura y la educación.</p>
             </div>
           </div>
           <div class="carousel-item">
             <img src="{% static 'assets/images/3.png' %}" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>.</p>
+            <div class="carousel-caption d-none d-md-block">              
             </div>
           </div>
         </div>
@@ -70,19 +64,20 @@
     
 
 
-    <div class="container mt-5">
+    <div class="container mt-5 ">
         <div class="jumbotron">
             <h1 class="display-4">Bienvenidos a Bookipedia!</h1>
             <p class="lead">
               Tu portal hacia un universo de conocimiento y aventura. Descubre Brookipedia, donde cada libro es una puerta a un nuevo mundo.En Brookipedia, no solo encontrarás libros, sino un universo entero esperando ser explorado. ¡Ven y experimenta todo lo que tenemos para ofrecerte!.</p>
             <hr class="my-4">
             <p>Encuentra más información en nuestras secciones especializadas.</p>
-            {% comment %} SE AÑADE URLS AL JUMBOTRON {% endcomment %}
+            {% comment %} SE AÑADE URLS AL JUMBOTRON falta quitar el del inicio {% endcomment %}
             {% for Navbar in Navbars %}
-            <a class="btn btn-primary btn-lg" href="{{ Navbar.url }}" role="button">{{ Navbar.nombre }}</a>
+            <a class="btn" style="background-color: #1B7E46; color: white;" href="{{ Navbar.url }}" role="button">{{ Navbar.nombre }}</a>
             {% endfor %}
         </div>        
     </div>
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

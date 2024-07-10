@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.http import JsonResponse
 from .models import *
 # Create your views here.
@@ -43,7 +43,6 @@ def display_images(request):
 def display_video(request):
     return render(request, 'myapp/display_video.html')
 
-def get_urls(request):
-    Navbars = Navbar.objects.all()
-    data = {Navbar.nombre: Navbar.url for Navbar in Navbars}
-    return JsonResponse(data)
+
+
+    

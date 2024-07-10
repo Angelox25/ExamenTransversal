@@ -12,8 +12,8 @@ urlpatterns = [
  
 	path('display-images/', views.display_images, name='display_images'),
     path('display-video/', views.display_video, name='display_video'),
-    
-    path('get-urls/', views.get_urls, name='get_urls'),
-    
+        
+
+
     
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

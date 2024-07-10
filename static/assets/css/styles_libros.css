@@ -1,0 +1,111 @@
+h1{
+  text-align: center;
+  font-weight: 900;
+  color: white;
+  margin: 50px;
+  font-size: 90px;
+}
+p{
+  text-align: justify;
+  color: black;
+  font-weight: 500;
+  font-size: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.1px);
+  -webkit-backdrop-filter: blur(4.1px);
+  border: 1px solid rgba(255, 255, 255, 1);
+  border-radius: 10px;
+  padding: 20px;
+  
+}
+
+th, td {
+  text-align: center; /* Alineación centrada para th y td */
+  border: 2px solid #dddddd;
+  padding: 8px;
+  text-align: center; /* Alineación centrada para th y td */
+  padding: 12px; /* Aumentamos el padding para mayor espacio alrededor del texto */
+  font-size: 20px; /* Tamaño de fuente más grande */
+}
+  
+.nav-item{
+  font-size: 20px;    
+}
+  
+.contenedor {
+  text-align: center;
+}
+
+.contenedor img {
+  display: block;
+  margin: auto;
+}
+  
+body {
+  background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-attachment: fixed; /* Fija la imagen al fondo */
+}
+
+/* Aumentamos el tamaño de fuente y el espacio alrededor de los datos */
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+  padding: 8px; /* Espacio alrededor de los botones de paginación */
+}
+.dataTables_wrapper .dataTables_info {
+  font-size: 14px; /* Tamaño de fuente para la información de la tabla */
+}
+.dataTables_wrapper .dataTables_filter input {
+  font-size: 14px; /* Tamaño de fuente para el cuadro de búsqueda */
+}
+.dataTables_wrapper .dataTables_length select {
+  font-size: 14px; /* Tamaño de fuente para el selector de número de registros */
+}
+.dataTables_wrapper .dataTables_scrollBody {
+  font-size: 16px; /* Tamaño de fuente para los datos en la tabla */
+}
+
+/* Para las tablas y el navbar */
+
+.trans{
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.1px);
+  -webkit-backdrop-filter: blur(4.1px);
+  border: 1px solid rgba(255, 255, 255, 1);
+}
+
+table{
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.1px);
+  -webkit-backdrop-filter: blur(4.1px);
+  border: 1px solid rgba(255, 255, 255, 1);
+  table-layout: fixed;
+
+}
+dt-layout-row ,div.dt-container .dt-search input,div.dt-container div.dt-layout-cell.dt-end
+,div.dt-container div.dt-layout-cell.dt-start{
+  font-size: 15px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.1px);
+  -webkit-backdrop-filter: blur(4.1px);
+  border: 0px solid rgba(255, 255, 255, 1);
+  font-weight: 500;  
+  
+}
+.jumbotron {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.9px);
+  -webkit-backdrop-filter: blur(1.9px);
+  border: 1px solid rgba(255, 255, 255, 0.59);
+  color: white;
+  }
+
+
