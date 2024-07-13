@@ -1,6 +1,8 @@
 from django.shortcuts import render, get_object_or_404
 from django.http import JsonResponse
 from .models import *
+import json
+
 # Create your views here.
 
 def index(request):
@@ -43,6 +45,3 @@ def display_images(request):
 def display_video(request):
     return render(request, 'myapp/display_video.html')
 
-
-
-    

@@ -1,9 +1,11 @@
+
 h1{
     text-align: center;
     font-weight: 900;
     color: white;
     margin: 50px;
     font-size: 90px;
+    font-family: 'Feeling Passionate', sans-serif;
   }
   p{
     text-align: justify;
@@ -141,6 +143,27 @@ h1{
   backdrop-filter: blur(4.1px);
   -webkit-backdrop-filter: blur(4.1px);
   border: 1px solid rgba(255, 255, 255, 1);
+}
+.hidden {
+  display: none;
+}
+.description {
+  position: relative;
+}
+
+.showMoreBtn {
+  display: block;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.showMoreBtn:hover {
+  background-color: #0056b3;
 }
   
   

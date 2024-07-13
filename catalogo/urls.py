@@ -12,7 +12,7 @@ urlpatterns = [
  
 	path('display-images/', views.display_images, name='display_images'),
     path('display-video/', views.display_video, name='display_video'),
-        
+     
 
 
     
